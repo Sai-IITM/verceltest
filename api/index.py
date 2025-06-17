@@ -4,8 +4,7 @@ from mangum import Mangum
 app = FastAPI()
 
 @app.get("/")
-def root():
-    return {"message": "Hello from Vercel"}
+async def index():
+    return {"message": "Hello from FastAPI on Vercel"}
 
-handler = Mangum(app)  # This is key for Vercel Lambda
-  
+handler = Mangum(app)
