@@ -1,2 +1,4 @@
 fastapi
-mangum
+pandas
+numpy
+uvicorn
